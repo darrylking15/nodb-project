@@ -1,4 +1,4 @@
-import React, {Component, useEffect}from 'react';
+import React, {Component}from 'react';
 import "./reset.css"
 import './App.css';
 import Header from "./Components/Header"
@@ -31,7 +31,7 @@ componentDidMount(){
   AOS.init({
     duration : 2000
   })
-  AOS.refresh()
+  
   
     
 }
@@ -76,8 +76,9 @@ render(){
 
         <Header/>
         {/* <Form/> */}
-        <Form addText={this.addText}/>
+        
         <Display deleteText={this.deleteText} text = {this.state.text} getRead={this.getRead} data-aos='flip-right' />
+        <Form addText={this.addText}/>
 
         
         

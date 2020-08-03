@@ -5,7 +5,7 @@ class Form extends Component{
     constructor(){
         super();
         this.state = {
-            texts: ""
+            text: ""
         }
     }
     
@@ -28,8 +28,8 @@ class Form extends Component{
                     value={this.state.title} 
                     type="text" 
                     onChange={(e) => this.universalHandler(e)}   
-                    placeholder="Sharing from the bible?"></input>
-                    <button>Add Verse</button>
+                    placeholder="Sharing a verse?"></input>
+                    <button className="thoughts-button">Add Verse</button>
                 </form>
             </div>
         )

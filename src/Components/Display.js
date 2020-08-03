@@ -2,7 +2,7 @@ import React from "react"
 import Task from "./Task"
 
 const Display = (props) => {
-    const textMap = props.text.map(text =>{
+   const textMap = props.text.map(text =>{
         return <Task  key={text.id} getRead={props.getRead} deleteText={props.deleteText} text={text}  />
     })
     return(
