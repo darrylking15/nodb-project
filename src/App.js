@@ -1,10 +1,13 @@
-import React, {Component} from 'react';
+import React, {Component, useEffect}from 'react';
 import "./reset.css"
 import './App.css';
 import Header from "./Components/Header"
 import axios from 'axios';
 import Display from "./Components/Display"
 import Form from "./Components/Form"
+import AOS from "aos"
+import "aos/dist/aos.css";
+
 
 
 class App extends Component {
@@ -25,6 +28,11 @@ class App extends Component {
   
 componentDidMount(){
   this.getText();
+  AOS.init({
+    duration : 2000
+  })
+  AOS.refresh()
+  
     
 }
 
@@ -58,7 +66,10 @@ getRead = (id) => {
   }).catch(err => console.log(err))
 }
 
-  render(){
+
+
+
+render(){
     console.log(this.state)
     return(
       <div>
@@ -66,7 +77,7 @@ getRead = (id) => {
         <Header/>
         {/* <Form/> */}
         <Form addText={this.addText}/>
-        <Display  deleteText={this.deleteText} text = {this.state.text} getRead={this.getRead}/>
+        <Display deleteText={this.deleteText} text = {this.state.text} getRead={this.getRead} data-aos='flip-right' />
 
         
         
