@@ -19,16 +19,17 @@ Dependencies:
 - express 
 
 Endpoints: 
-- app.get("/api/")
-- app.post("/api/") 
-- app.delete("/api/")
-- app.put("/api/")
-- app.put("/api/")
+- app.get("/api/text")
+- app.post("/api/text") 
+- app.delete("/api/text/:id")
+- app.put("/api/text/:id")
+- app.put("/api/text/:id")
 
 Structure:
 - server/
     - index.js
     - controller.js
+    - text.json
     
 
 

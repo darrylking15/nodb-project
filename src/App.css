@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+body {
+  height: 100vh; 
+  background-color: #A9A9A9;
+  
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.react-header{
+  height: 10vh; 
+  width: 100vw; 
+  background-color: #0CBABA; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-title{
+  font-family: 'Lobster Two', cursive;
+  font-size: 35px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.display-container{
+  color: white;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin-top: 30px;  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.text-verse{
+  width: 50%;
+  height: 50px; 
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.verse-button {
+	box-shadow: 3px 4px 0px 0px #a9a9a9;
+	background:linear-gradient(to bottom, #0cbaba 5%, #a9a9a9 100%);
+	background-color:#0cbaba;
+	border-radius:5px;
+	border:1px solid #a9a9a9;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:11px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.verse-button:hover {
+	background:linear-gradient(to bottom, #a9a9a9 5%, #0cbaba 100%);
+	background-color:#a9a9a9;
+}
+.verse-button:active {
+	position:relative;
+	top:1px;
+}
+
+img{
+  width: 100px;
+  height: 70px;
+  margin-right: 20px;  
+
+}
+
+.thoughts-form{
+  display: flex;
+  justify-content: center;
+
+
 }
